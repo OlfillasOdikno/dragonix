@@ -3,7 +3,8 @@
 A nix flake to manage your Ghidra extensions
 
 ## Packaged Extensions
-- Ghidrathon
+- [Ghidrathon](https://github.com/mandiant/Ghidrathon)
+- [Delinker](https://github.com/boricj/ghidra-delinker-extension)
 
 ## Usage with NixOS system flake
 

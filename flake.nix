@@ -13,6 +13,7 @@
             passthru = {
               extensions = {
                 ghidrathon = final.callPackage ./extensions/ghidrathon.nix { };
+                delinker = final.callPackage ./extensions/delinker.nix { };
               };
               withExtensions = extensions: final.callPackage ./wrapper.nix {
                 inherit (final) ghidra;
@@ -44,6 +45,7 @@
         inherit (pkgs) ghidra;
         allExtensions = pkgs.ghidra.withExtensions (with pkgs.ghidra.extensions; [
           ghidrathon
+          delinker
         ]);
       });
     };
